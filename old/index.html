@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>道器智造 - 技术创新的引领者</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>道器智造</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="dao.html">道</a></li>
+                <li><a href="qi.html">器</a></li>
+                <li><a href="wan.html">玩</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图区域 -->
+    <section class="hero-section">
+        <div class="carousel-container">
+            <div class="carousel-slides">
+                <div class="carousel-slide active">
+                    <img src="images/banner-1.jpg" alt="技术创新">
+                    <div class="carousel-content">
+                        <h2>技术创新，引领未来</h2>
+                        <p>专注于前沿技术的研发与应用</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/banner-2.jpg" alt="智能制造">
+                    <div class="carousel-content">
+                        <h2>智能制造，高效生产</h2>
+                        <p>打造智能化生产解决方案</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/banner-3.jpg" alt="数字化转型">
+                    <div class="carousel-content">
+                        <h2>数字化转型，赋能企业</h2>
+                        <p>助力企业实现数字化转型升级</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 服务介绍标签页 -->
+            <section class="section">
+                <h2 class="section-title">我们的服务</h2>
+                <div id="services-tabs" class="tabs-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="ai">人工智能</button>
+                        <button class="tab-btn" data-tab="iot">物联网</button>
+                        <button class="tab-btn" data-tab="cloud">云计算</button>
+                        <button class="tab-btn" data-tab="bigdata">大数据</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-panel active" id="ai">
+                            <h3>人工智能解决方案</h3>
+                            <p>提供先进的AI技术，包括机器学习、深度学习、自然语言处理等，帮助企业实现智能化转型。</p>
+                            <ul>
+                                <li>智能推荐系统</li>
+                                <li>图像识别与分析</li>
+                                <li>语音识别与处理</li>
+                                <li>智能客服系统</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="iot">
+                            <h3>物联网平台</h3>
+                            <p>构建完整的物联网生态系统，实现设备互联、数据采集和智能控制。</p>
+                            <ul>
+                                <li>设备接入与管理</li>
+                                <li>实时数据监控</li>
+                                <li>远程控制与操作</li>
+                                <li>数据分析与预测</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="cloud">
+                            <h3>云计算服务</h3>
+                            <p>提供稳定可靠的云计算基础设施，支持弹性扩展和高可用性。</p>
+                            <ul>
+                                <li>云服务器部署</li>
+                                <li>容器化解决方案</li>
+                                <li>云存储服务</li>
+                                <li>CDN加速服务</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="bigdata">
+                            <h3>大数据分析</h3>
+                            <p>挖掘数据价值，提供数据分析和商业智能解决方案。</p>
+                            <ul>
+                                <li>数据采集与清洗</li>
+                                <li>数据仓库建设</li>
+                                <li>实时数据分析</li>
+                                <li>可视化报表</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 留言功能 -->
+            <section class="section">
+                <h2 class="section-title">留言咨询</h2>
+                <div class="message-form-container">
+                    <form id="messageForm" class="message-form">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱 *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">电话</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题 *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言内容 *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">提交留言</button>
+                    </form>
+                    <div id="messageList" class="message-list">
+                        <h3>最新留言</h3>
+                        <div id="messagesContainer"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>道器智造</h3>
+                    <p>技术创新，引领未来</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="dao.html">道</a></li>
+                        <li><a href="qi.html">器</a></li>
+                        <li><a href="wan.html">玩</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>邮箱: 781772346@qq.com</p>
+                    <p>电话: 13671671697</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 道器智造. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tabs.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
+

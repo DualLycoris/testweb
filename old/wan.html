@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩 - 道器智造</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>道器智造</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="dao.html">道</a></li>
+                <li><a href="qi.html">器</a></li>
+                <li><a href="wan.html" class="active">玩</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <section class="section">
+                <h1 class="section-title">玩</h1>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+                    在玩中创新，在创新中玩
+                </p>
+
+                <!-- 玩的分类标签 -->
+                <div id="wan-tabs" class="tabs-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="mental">心理健康</button>
+                        <button class="tab-btn" data-tab="social">社会话题</button>
+                        <button class="tab-btn" data-tab="education">教育&文化</button>
+                        <button class="tab-btn" data-tab="tourism">文旅休闲</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-panel active" id="mental">
+                            <h3>心理健康</h3>
+                            <p>关注心理健康，提供专业的心理支持和健康管理服务，帮助人们建立积极健康的生活态度。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>心理测评</h4>
+                                    <p>提供专业的心理健康测评工具，帮助用户了解自身心理状态和情绪变化。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>情绪管理</h4>
+                                    <p>通过科学的方法和工具，帮助用户识别、理解和管理情绪，提升情绪调节能力。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>压力缓解</h4>
+                                    <p>提供压力管理技巧和放松训练，帮助用户缓解工作生活压力，保持心理平衡。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>心理成长</h4>
+                                    <p>通过心理课程和训练，促进个人心理成长，提升自我认知和人际交往能力。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="social">
+                            <h3>社会话题</h3>
+                            <p>关注社会热点话题，促进理性讨论和思想交流，推动社会进步和文明发展。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>热点讨论</h4>
+                                    <p>围绕社会热点话题，组织理性讨论，促进不同观点的交流与碰撞。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>社会观察</h4>
+                                    <p>深入观察社会现象，分析社会问题，提供有价值的思考和建议。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>公益参与</h4>
+                                    <p>组织公益活动，鼓励社会参与，传递正能量，推动社会和谐发展。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>思想交流</h4>
+                                    <p>搭建思想交流平台，促进不同背景人群的对话，增进理解与共识。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="education">
+                            <h3>教育&文化</h3>
+                            <p>传承优秀文化，推动教育创新，通过科技手段让学习和文化传播更加生动有趣。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>文化传承</h4>
+                                    <p>运用数字技术传承和弘扬优秀传统文化，让经典文化焕发新的生命力。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>创新教育</h4>
+                                    <p>探索教育新模式，运用AI、VR等技术，提供个性化、互动式的学习体验。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>知识分享</h4>
+                                    <p>搭建知识分享平台，让知识传播更加便捷，促进学习型社会建设。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>文化体验</h4>
+                                    <p>通过沉浸式体验，让用户感受不同文化的魅力，拓宽文化视野。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="tourism">
+                            <h3>文旅休闲</h3>
+                            <p>结合文化与旅游，提供丰富的休闲体验，让旅行成为文化探索和心灵放松的旅程。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>文化之旅</h4>
+                                    <p>设计深度文化体验路线，让旅行者深入了解当地文化和历史底蕴。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>智慧旅游</h4>
+                                    <p>运用AI和大数据技术，提供个性化旅游推荐和智能导览服务。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>休闲体验</h4>
+                                    <p>提供多样化的休闲活动，让人们在忙碌之余享受生活的美好。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>特色探索</h4>
+                                    <p>发现和推荐特色景点和体验，让旅行更加有趣和难忘。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>道器智造</h3>
+                    <p>技术创新，引领未来</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="dao.html">道</a></li>
+                        <li><a href="qi.html">器</a></li>
+                        <li><a href="wan.html">玩</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>邮箱: 781772346@qq.com</p>
+                    <p>电话: 13671671697</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 道器智造. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tabs.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>器 - 道器智造</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>道器智造</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="dao.html">道</a></li>
+                <li><a href="qi.html" class="active">器</a></li>
+                <li><a href="wan.html">玩</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <section class="section">
+                <h1 class="section-title">器</h1>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+                    工欲善其事，必先利其器
+                </p>
+
+                <!-- 器的分类标签 -->
+                <div id="qi-tabs" class="tabs-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="superlimit">超限智造</button>
+                        <button class="tab-btn" data-tab="digital">数字岐黄</button>
+                        <button class="tab-btn" data-tab="wisdom">知心慧语</button>
+                        <button class="tab-btn" data-tab="agriculture">新农业</button>
+                        <button class="tab-btn" data-tab="skin">皮肤健康</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-panel active" id="superlimit">
+                            <h3>超限智造</h3>
+                            <p>超限智造代表着超越传统制造边界的智能化解决方案，融合先进技术与创新思维，打造下一代智能制造系统。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>智能生产线</h4>
+                                    <p>集成AI、物联网、机器人技术，实现生产过程的全面自动化和智能化。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>数字孪生</h4>
+                                    <p>构建物理工厂的数字镜像，实现虚拟仿真、预测性维护和优化决策。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>柔性制造</h4>
+                                    <p>支持多品种、小批量生产，快速响应市场需求变化，提高生产灵活性。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>智能决策</h4>
+                                    <p>基于大数据和AI算法，实现生产计划、质量管控、设备维护的智能决策。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="digital">
+                            <h3>数字岐黄</h3>
+                            <p>数字岐黄将传统中医智慧与现代数字技术相结合，通过AI、大数据等技术手段，传承和发展中医药文化。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>中医智能诊断</h4>
+                                    <p>运用AI技术辅助中医诊断，结合望闻问切四诊信息，提供诊断建议。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>中药知识库</h4>
+                                    <p>构建数字化中药知识库，整合经典方剂、药材信息、配伍禁忌等知识。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>体质辨识系统</h4>
+                                    <p>通过数据分析进行中医体质辨识，提供个性化健康调理方案。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>健康管理平台</h4>
+                                    <p>提供基于中医理论的健康管理平台，实现预防保健和慢病管理。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="wisdom">
+                            <h3>知心慧语</h3>
+                            <p>知心慧语是智能化的心理服务和情感交流平台，运用AI技术提供心理健康支持和情感陪伴。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>智能心理咨询</h4>
+                                    <p>基于NLP技术的智能心理咨询系统，提供24小时在线心理支持和疏导。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>情感分析</h4>
+                                    <p>通过文本、语音分析用户情感状态，及时发现心理问题并提供干预建议。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>心理健康评估</h4>
+                                    <p>提供专业的心理健康评估工具，帮助用户了解自身心理状态。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>个性化建议</h4>
+                                    <p>根据用户情况提供个性化的心理健康建议和训练方案。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="agriculture">
+                            <h3>新农业</h3>
+                            <p>新农业运用物联网、大数据、AI等先进技术，推动农业现代化，实现精准农业和智慧农业。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>智慧农场</h4>
+                                    <p>通过传感器、无人机等技术，实现农田环境的实时监测和精准管理。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>精准灌溉</h4>
+                                    <p>基于土壤湿度、气象数据，实现精准灌溉，节约水资源，提高产量。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>病虫害识别</h4>
+                                    <p>运用图像识别技术，自动识别作物病虫害，及时预警和防治。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>农产品溯源</h4>
+                                    <p>建立完整的农产品溯源体系，保障食品安全，提升产品价值。</p>
+                            </div>
+                            <div class="service-item">
+                                <h4>生物化学农药</h4>
+                                <p>研发和应用生物与化学结合的低残留农药，提高防治效果并降低环境影响。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="skin">
+                            <h3>皮肤健康</h3>
+                            <p>皮肤健康平台运用AI图像识别和数据分析技术，提供专业的皮肤健康管理和护理建议。</p>
+                            <div class="service-details">
+                                <div class="service-item">
+                                    <h4>皮肤检测分析</h4>
+                                    <p>通过AI图像分析，检测皮肤状态、问题识别，提供专业的皮肤评估报告。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>个性化护肤方案</h4>
+                                    <p>根据个人肤质和问题，提供个性化的护肤产品推荐和护理方案。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>皮肤健康追踪</h4>
+                                    <p>长期追踪皮肤状态变化，记录护理效果，优化护肤策略。</p>
+                                </div>
+                                <div class="service-item">
+                                    <h4>专业咨询</h4>
+                                    <p>连接专业皮肤科医生，提供在线咨询和诊疗建议服务。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>道器智造</h3>
+                    <p>技术创新，引领未来</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="dao.html">道</a></li>
+                        <li><a href="qi.html">器</a></li>
+                        <li><a href="wan.html">玩</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>邮箱: 781772346@qq.com</p>
+                    <p>电话: 13671671697</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 道器智造. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tabs.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 道器智造</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>道器智造</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="dao.html">道</a></li>
+                <li><a href="qi.html">器</a></li>
+                <li><a href="wan.html">玩</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <section class="section">
+                <h1 class="section-title">联系我们</h1>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+                    欢迎与我们联系，我们将竭诚为您服务
+                </p>
+
+                <div class="contact-container">
+                    <!-- 联系信息 -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>公司地址</h3>
+                            <p>上海市梅陇路130号</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>联系电话</h3>
+                            <p>13671671697</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>电子邮箱</h3>
+                            <p>781772346@qq.com</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🕒</div>
+                            <h3>工作时间</h3>
+                            <p>周一至周五: 9:00 - 18:00</p>
+                            <p>周六: 9:00 - 12:00</p>
+                        </div>
+                    </div>
+
+                    <!-- 留言表单 -->
+                    <div class="contact-form-wrapper">
+                        <h2>在线留言</h2>
+                        <form id="contactForm" class="message-form">
+                            <div class="form-group">
+                                <label for="contact-name">姓名 *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">邮箱 *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">电话 *</label>
+                                <input type="tel" id="contact-phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">主题 *</label>
+                                <select id="contact-subject" name="subject" required>
+                                    <option value="">请选择</option>
+                                    <option value="咨询">产品咨询</option>
+                                    <option value="合作">商务合作</option>
+                                    <option value="技术支持">技术支持</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">留言内容 *</label>
+                                <textarea id="contact-message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">提交留言</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>道器智造</h3>
+                    <p>技术创新，引领未来</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="dao.html">道</a></li>
+                        <li><a href="qi.html">器</a></li>
+                        <li><a href="wan.html">玩</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>邮箱: 781772346@qq.com</p>
+                    <p>电话: 13671671697</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 道器智造. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/message.js"></script>
+    <script src="js/navbar.js"></script>
+    <script>
+        // 联系页面的表单处理
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const formData = new FormData(contactForm);
+                    const message = {
+                        id: Date.now(),
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        phone: formData.get('phone'),
+                        subject: formData.get('subject'),
+                        message: formData.get('message'),
+                        date: new Date().toLocaleString('zh-CN')
+                    };
+
+                    // 保存到本地存储
+                    let messages = JSON.parse(localStorage.getItem('messages') || '[]');
+                    messages.unshift(message);
+                    if (messages.length > 50) {
+                        messages = messages.slice(0, 50);
+                    }
+                    localStorage.setItem('messages', JSON.stringify(messages));
+
+                    // 显示成功提示
+                    alert('留言提交成功！我们会尽快与您联系。');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

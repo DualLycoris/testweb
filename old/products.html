@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品展示 - 道器智造</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>道器智造</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="dao.html">道</a></li>
+                <li><a href="qi.html">器</a></li>
+                <li><a href="wan.html">玩</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <section class="section">
+                <h1 class="section-title">产品展示</h1>
+                <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+                    创新产品，助力企业数字化转型
+                </p>
+
+                <!-- 产品分类标签 -->
+                <div id="products-tabs" class="tabs-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="platform">平台产品</button>
+                        <button class="tab-btn" data-tab="software">软件产品</button>
+                        <button class="tab-btn" data-tab="hardware">硬件产品</button>
+                        <button class="tab-btn" data-tab="solution">解决方案</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-panel active" id="platform">
+                            <h3>平台产品</h3>
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-icon">AI</div>
+                                    <h4>AI智能平台</h4>
+                                    <p>一站式AI开发和应用平台，提供模型训练、部署和管理能力。</p>
+                                    <ul>
+                                        <li>模型训练与管理</li>
+                                        <li>API服务接口</li>
+                                        <li>可视化建模工具</li>
+                                    </ul>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-icon">IoT</div>
+                                    <h4>物联网云平台</h4>
+                                    <p>企业级物联网平台，支持海量设备接入和数据处理。</p>
+                                    <ul>
+                                        <li>设备管理</li>
+                                        <li>数据采集</li>
+                                        <li>规则引擎</li>
+                                    </ul>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-icon">Cloud</div>
+                                    <h4>工业云平台</h4>
+                                    <p>面向制造业的云平台，提供生产管理和数据分析能力。</p>
+                                    <ul>
+                                        <li>生产监控</li>
+                                        <li>质量追溯</li>
+                                        <li>能耗管理</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="software">
+                            <h3>软件产品</h3>
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-icon">MES</div>
+                                    <h4>制造执行系统</h4>
+                                    <p>生产管理软件，实现生产过程的数字化管理。</p>
+                                    <ul>
+                                        <li>生产计划</li>
+                                        <li>工艺管理</li>
+                                        <li>质量管控</li>
+                                    </ul>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-icon">WMS</div>
+                                    <h4>仓储管理系统</h4>
+                                    <p>智能仓储管理软件，提升仓储效率。</p>
+                                    <ul>
+                                        <li>库存管理</li>
+                                        <li>出入库管理</li>
+                                        <li>智能盘点</li>
+                                    </ul>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-icon">BI</div>
+                                    <h4>商业智能系统</h4>
+                                    <p>数据分析和可视化平台，支持多维度数据分析。</p>
+                                    <ul>
+                                        <li>数据报表</li>
+                                        <li>可视化大屏</li>
+                                        <li>预测分析</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="hardware">
+                            <h3>硬件产品</h3>
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-icon">Gateway</div>
+                                    <h4>物联网网关</h4>
+                                    <p>支持多种协议的物联网网关设备。</p>
+                                    <ul>
+                                        <li>多协议支持</li>
+                                        <li>边缘计算</li>
+                                        <li>安全可靠</li>
+                                    </ul>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-icon">Sensor</div>
+                                    <h4>智能传感器</h4>
+                                    <p>各类工业传感器，支持温度、湿度、压力等监测。</p>
+                                    <ul>
+                                        <li>高精度测量</li>
+                                        <li>无线传输</li>
+                                        <li>低功耗设计</li>
+                                    </ul>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-icon">Edge</div>
+                                    <h4>边缘计算设备</h4>
+                                    <p>边缘计算终端，支持本地数据处理和分析。</p>
+                                    <ul>
+                                        <li>高性能计算</li>
+                                        <li>实时响应</li>
+                                        <li>离线运行</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="solution">
+                            <h3>解决方案</h3>
+                            <div class="products-grid">
+                                <div class="product-card">
+                                    <div class="product-icon">Smart</div>
+                                    <h4>智能工厂解决方案</h4>
+                                    <p>完整的智能工厂建设方案，实现生产智能化。</p>
+                                    <ul>
+                                        <li>设备互联</li>
+                                        <li>数据驱动</li>
+                                        <li>智能决策</li>
+                                    </ul>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-icon">Quality</div>
+                                    <h4>质量追溯解决方案</h4>
+                                    <p>产品质量追溯系统，实现全流程质量管控。</p>
+                                    <ul>
+                                        <li>全程追溯</li>
+                                        <li>质量分析</li>
+                                        <li>问题定位</li>
+                                    </ul>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-icon">Energy</div>
+                                    <h4>能耗管理解决方案</h4>
+                                    <p>企业能耗监测和管理系统，降低能源成本。</p>
+                                    <ul>
+                                        <li>能耗监测</li>
+                                        <li>节能分析</li>
+                                        <li>优化建议</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>道器智造</h3>
+                    <p>技术创新，引领未来</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="dao.html">道</a></li>
+                        <li><a href="qi.html">器</a></li>
+                        <li><a href="wan.html">玩</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p>邮箱: 781772346@qq.com</p>
+                    <p>电话: 13671671697</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 道器智造. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tabs.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
+
