@@ -7,37 +7,37 @@
 - **目标**：保留原静态站点所有页面内容与风格，同时增加动态功能
 
 ## 目录结构
--testweb/
--├── old/                # 原静态页面
--│
--├── requirements.txt    # 后端 Python 依赖
--│
--├── backend/            # Django 项目
--│   ├── manage.py
--│   ├── config/         # 项目配置（settings.py、urls.py 等）
--│   ├── api/            # 认证相关（注册、登录、JWT、/me）
--│   ├── news/           # 新闻模型、序列化器、视图、Admin
--│   └── messages_app/   # 留言模型、序列化器、视图、Admin
--│
--└── frontend/           # Vue 3 前端项目
--│   ├── package.json
--│   ├── vite.config.ts
--│   ├── tsconfig.json
--│   ├── public/
--│   │   ├── images/     # 图片路径
--│   │   │   ├── galary/     # 画廊图片路径
--│   │   │   └── banner/     # 循环播放图片路径
--│   │   └── videos/     # 视频资源
--│   └── src/
--│   │   ├── main.ts
--│   │   ├── App.vue
--│   │   ├── router/     # 路由配置（含 /news/:id、/login、/register 等）
--│   │   ├── stores/     # Pinia 状态管理（auth 认证状态）
--│   │   ├── api/        # Axios 封装（自动注入 token、401 自动 refresh）
--│   │   ├── views/      # 页面视图（HomeView、DaoView、QiView 等）
--│   │   └── components/ # 公共组件（Navbar、Footer、Tabs 等）
--
+testweb/  
+├── old/                # 原静态页面  
+│  
+├── requirements.txt    # 后端 Python 依赖  
+│  
+├── backend/            # Django 项目  
+│   ├── manage.py  
+│   ├── config/         # 项目配置（settings.py、urls.py 等）  
+│   ├── api/            # 认证相关（注册、登录、JWT、/me）  
+│   ├── news/           # 新闻模型、序列化器、视图、Admin  
+│   └── messages_app/   # 留言模型、序列化器、视图、Admin  
+│  
+└── frontend/           # Vue 3 前端项目  
+│   ├── package.json  
+│   ├── vite.config.ts  
+│   ├── tsconfig.json  
+│   ├── public/  
+│   │   ├── images/     # 图片路径  
+│   │   │   ├── galary/     # 画廊图片路径  
+│   │   │   └── banner/     # 循环播放图片路径  
+│   │   └── videos/     # 视频资源  
+│   └── src/  
+│   │   ├── main.ts  
+│   │   ├── App.vue  
+│   │   ├── router/     # 路由配置（含 /news/:id、/login、/register 等）  
+│   │   ├── stores/     # Pinia 状态管理（auth 认证状态）  
+│   │   ├── api/        # Axios 封装（自动注入 token、401 自动 refresh）  
+│   │   ├── views/      # 页面视图（HomeView、DaoView、QiView 等）  
+│   │   └── components/ # 公共组件（Navbar、Footer、Tabs 等）  
 
+  
 ## 功能亮点
 
 - **首页改造**：轮播支持图片与视频交替、公司图片画廊（lightbox）、视频展示区、最新新闻动态列表、留言入口。
@@ -80,7 +80,7 @@ python backend/manage.py createsuperuser
 python backend/manage.py runserver 0.0.0.0:8000
 ```
 
-访问后台管理：http://127.0.0.1:8000/admin/
+访问后台管理：http://127.0.0.1:8000/admin/  
 默认用户名：admin  密码：123456
 
 ### 2. 前端（Vue + Vite）
